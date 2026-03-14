@@ -248,4 +248,53 @@ footer { padding: 20px; text-align: center; background: #222; color: #777; font-
         flex-direction: column;
     }
 }
+/* Footer Logo & Layout Styling */
+.footer-section {
+    background: #222;
+    color: #fff;
+    padding: 50px 10% 20px 10%;
+    text-align: center;
+}
 
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    height: 80px; /* Slightly larger than the nav logo for impact */
+    width: auto;
+    filter: brightness(1.1); /* Makes the logo pop against the dark background */
+}
+
+.footer-brand h3 {
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.footer-brand .hindi {
+    color: #d9534f; /* Your signature Red */
+}
+
+.footer-contact p {
+    font-size: 14px;
+    color: #bbb;
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    font-size: 12px;
+    color: #777;
+}
+
+/* Mobile fix for footer */
+@media (max-width: 768px) {
+    .footer-section {
+        padding: 40px 5% 80px 5%; /* Extra bottom padding so it doesn't hide behind the Call button */
+    }
+}
